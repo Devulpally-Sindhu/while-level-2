@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a program to check a given number is armstrong number or not Ex:153 is an armstrong number
+
+        var num=+prompt("enter a number");
+        var rem;
+        var count=0;
+        var temp=num;
+        var sum=0;
+        var arm=num;
+        var count=0;
+
+        while(num){
+            rem=num%10;
+            count++;
+            num=parseInt(num/10)            
+        }
+        while(temp){
+            rem=temp%10;
+            sum=sum+rem**count;
+            temp=parseInt(temp/10)
+        }
+        if(arm===sum){
+            console.log("Given number is armstrong number")
+        }
+        else{
+            console.log("it is not armstrong number")
+        }
+
+     
+    </script>
+</body>
+</html>

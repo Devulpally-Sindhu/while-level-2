@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sum of all digits of a given number Ex: let us take 19345 is the given number The output should be 22 (1+9+3+4+5)=22
+        var num=+prompt("enter a number");
+        var rem;
+        var sum=0;
+        while(num){
+            rem=num%10;
+            sum=sum+rem;
+            num=parseInt(num/10)
+        }
+        console.log(sum)
+    </script>
+</body>
+</html>

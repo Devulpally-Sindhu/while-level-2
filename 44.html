@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a program to print the nCr of given ‘n’ and ‘r’
+        var n=+prompt();
+        var r=+prompt();
+        var nfact=1;
+        var rfact=1;
+        var dfact=1;
+
+        var i=1;
+        while(i<=n){
+            nfact=nfact*i;
+            i++
+        }
+
+        var i=1;
+        while(i<=r){
+            rfact=rfact*i;
+            i++
+        }
+
+        var i=1;
+        while(i<=n-r){
+            dfact=dfact*i;
+            i++
+        }
+        console.log(nfact/(rfact*dfact))
+
+
+
+    </script>
+</body>
+</html>
