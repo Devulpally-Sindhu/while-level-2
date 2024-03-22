@@ -12,20 +12,20 @@
         var num=+prompt("enter a number");
         var rem;
         var count=0;
-        var temp=num;
         var sum=0;
         var arm=num;
         var count=0;
+        var temp=num;
 
         while(num){
             rem=num%10;
             count++;
-            num=parseInt(num/10)            
+            num=parseInt(num/10);
         }
         while(temp){
             rem=temp%10;
-            sum=sum+rem**count;
-            temp=parseInt(temp/10)
+            sum=sum+rem**count; 
+            temp=parseInt(temp/10)           
         }
         if(arm===sum){
             console.log("Given number is armstrong number")
